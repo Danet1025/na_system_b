@@ -1,19 +1,19 @@
-name: na_system_b
+name: na_system_danet
 
 services:
   admin:
     build:
       context: ./admin
       dockerfile: Dockerfile
-    container_name: na_admin_b
+    container_name: na_admin_danet
     ports:
-      - "90:80"
+      - "93:80"
   
 
   client:
     build:
       context: ./client
       dockerfile: Dockerfile
-    container_name: na_client_b
+    container_name: na_client_danet
     ports:
-      - "91:80"
+      - "94:80"
