@@ -1,0 +1,19 @@
+name: na_system_b
+
+services:
+  admin:
+    build:
+      context: ./admin
+      dockerfile: Dockerfile
+    container_name: na_admin_b
+    ports:
+      - "90:80"
+  
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: na_client_b
+    ports:
+      - "91:80"
